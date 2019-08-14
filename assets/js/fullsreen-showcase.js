@@ -155,7 +155,7 @@ $('.to-down').on('click', function () {
 // FadeInLeft
 TweenMax.from('.title-work', 5, {x:600, ease:Elastic.easeOut})
 
-const controller = new scrollMagic.controller;
+// const controller = new scrollMagic.controller;
 
 // const scene = new scrollMagic.Scene({
 //     triggerElement: '.trigger',
