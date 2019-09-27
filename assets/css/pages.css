@@ -1,12 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: black;
+  background-color:  rgb(22, 17, 17);
   color: #fff;
   display: flex; }
 h1 {
   font-weight: bold;
   font-size: 3em;
+  margin: 0 0 30px;
 }
 p{
   font-weight: 500;
@@ -25,7 +26,7 @@ p{
 .mainContent {
   width: 68%;
   margin-left: 30%;
-  background-color: black;
+  background-color: rgb(22, 17, 17);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
@@ -73,16 +74,40 @@ fotoItem {
   max-width: 100%; }
 
 /*# sourceMappingURL=pages.css.map */
+
+
+  .nav-burger {
+
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    z-index: 99;
+
+}
+
+.brandlogo{
+  margin: 30px 0 30px;
+  width: 150px;
+}
+
 @media only screen and (max-width:650px){
+  h1{
+    font-size: 1.7em;
+    margin: 0 0 7px; 
+  }
+  p{
+    font-weight: 400;
+    font-size: 0.7em;
+  }
   .sidebar{
     width: 100%;
-    height: 60vh;
+    height: 55vh;
   }
   .mainContent {
     width: 95%;
     margin-left: 0;
     margin-top: 60vh;
-    background-color: black;
+    background-color:rgb(22, 17, 17);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-gap: 10px;
@@ -100,13 +125,32 @@ fotoItem {
       grid-column-end: span 3;
       grid-row-end: span 4; 
     }
+    .menu-link {
+      font-size: 25px;
+    }
+    .brandlogo{
+      margin: 10px 0 10px;
+      width: 100px;
+    }
   }
 
-  .nav-burger {
-
-    position: fixed;
-    left: 30px;
-    top: 20px;
-    z-index: 99;
-
-}
+  @media only screen and (max-width:1342px){
+    h1{
+      font-size: 2.2em;
+      margin: 0 0 7px; 
+    }
+    p{
+      font-weight: 400;
+      font-size: 0.6em;
+    } 
+  }
+  @media only screen and (max-width:962px){
+    h1{
+      font-size: 1.4em;
+      margin: 0 0 7px; 
+    }
+    p{
+      font-weight: 400;
+      font-size: 0.6em;
+    } 
+  }
